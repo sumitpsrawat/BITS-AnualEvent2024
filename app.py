@@ -15,7 +15,7 @@ def home():
     # connection = connect_to_db()
     # if connection:
     #     # Fetch event details
-        event_data = {"name": "Sample Event", "date": "2024-03-31", "description": "This is a sample event."}
+        event_data = {"name": "Annual BITS Event 2024", "date": "2024-03-31", "description": "This is BITS Pilani Annual Event page."}
     #     connection.close()
         return render_template("index.html", event=event_data)
     # else:
@@ -24,7 +24,7 @@ def home():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "GET":
-        event_data = {"name": "Sample Event", "date": "2024-03-31", "description": "This is a sample event."}
+        event_data = {"name": "Annual BITS Event 2024", "date": "2024-03-31", "description": "This is BITS Pilani Annual Event registration page"}
         return render_template("register.html", event=event_data)
     elif request.method == "POST":
         # form validation and data storage
